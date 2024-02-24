@@ -1,6 +1,7 @@
 
 // This is both a Product and contains Products
 // This is Composition, composing PersonalComputer of sub Products
+// Composition composes multiple classes in to a coherent object.
 public class PersonalComputer extends Product {
 
     private ComputerCase computerCase;
@@ -25,4 +26,7 @@ public class PersonalComputer extends Product {
     public Motherboard getMotherboard() {
         return motherboard;
     }
+
+
+
 }
