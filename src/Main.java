@@ -65,7 +65,7 @@ public class Main {
         private String powerSupply;
 
 
-        public Monitor(String model, String manufacturer) {
+        public ComputerCase(String model, String manufacturer) {
             super(model, manufacturer);
         }
 
