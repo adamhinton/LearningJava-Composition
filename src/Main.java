@@ -17,6 +17,38 @@ public class Main {
     }
 
 
+    class Monitor extends Product {
+        public Monitor(String model, String manufacturer) {
+            super(model, manufacturer);
+        }
+    }
 
+    class Motherboard extends Product {
+        private int ramSlots;
+        private int cardSlots;
+        private String bios;
+
+        public Motherboard(String model, String manufacturer) {
+            super(model, manufacturer);
+        }
+
+        public Motherboard(String model, String manufacturer, int ramSlots, int cardSlots, String bios) {
+            super(model, manufacturer);
+            this.ramSlots = ramSlots;
+            this.cardSlots = cardSlots;
+            this.bios = bios;
+        }
+
+        public void loadProgram(String programName){
+            System.out.printf("Program %s \n is now loading...", programName);
+        }
+    }
+
+
+    class ComputerCase extends Product {
+        public Monitor(String model, String manufacturer) {
+            super(model, manufacturer);
+        }
+    }
 
 }
